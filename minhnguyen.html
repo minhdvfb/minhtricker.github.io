@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minh Nguyễn</title>
+</head>
+<style>
+    .card img{
+        height: 150px;
+        width: 150px;
+        border-radius: 100px;
+    }
+    .profile{
+        color: grey;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="card" style="text-align: center;">
+        <img src="/card/avt.png">
+    </div>
+    <div class="profile">
+        <small>Tên Thật : Nguyễn Lê Trần Minh</small><br>
+        <small>Gmail : minhtrickerfb@gmail.com</small><br>
+        <small>Facebook : Minh Nguyễn</small><br>
+        <small>Instagram : Minh Nguyễn</small><br>
+        <small>Zalo : 0582626248</small>
+    </div>
+    <style>
+        @import url('https://font.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins' , sans-serif;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+        background-color: #0e1538;
+    }
+    a{
+        position: relative;
+        padding: 20px 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0,0,0,0.5);
+        margin: 40px;
+        transition: 1s;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    a:hover{
+        background: var(--clr);
+        box-shadow: 0 0 10px var(--clr),
+        0 0 30px var(--clr),
+        0 0 60px var(--clr),
+        0 0 100px var(--clr);
+    }
+    a:hover::before{
+        width: 120%;
+    }
+    a::before{
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 400%;
+        background: var(--clr);
+        transition: 1s;
+        animation: animate 2s linear infinite;
+        animation-delay: calc(0.33s * var(--i));
+    }
+    a::after{
+        content: '';
+        position: absolute;
+        inset: 4px;
+        background: #0e1538;
+        transition: 0.5s;
+    }
+    a:hover::after{
+        background: var(--clr);
+    }
+    a span{
+        position: relative;
+        z-index: 1;
+        font-size: 2em;
+        color: #fff;
+        opacity: 0.5;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        transition: 0.5s;
+    }
+    a:hover span{
+        opacity: 1;
+    }
+    @keyframes animate{
+        0%
+        {
+            transform: rotate(0deg);
+        }
+        100%
+        {
+            transform: rotate(360deg);
+        }
+    }
+    </style>
+    <body>
+        <a href="https://www.facebook.com/shopmnguyen/" style="--clr: #00ccff;--i:1;"><span>Facebook</span></a>
+        <a href="https://www.instagram.com/shopmnguyen/" style="--clr: rgba(231, 231, 10, 0.933);--i:2;"><span>Instagram</span></a>
+        <a href="https://zalo.me/0582626248" style="--clr: #ee00bb;--i:3;"><span>Zalo</span></a>
+    </body>
+</body>
+</html>
